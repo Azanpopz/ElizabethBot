@@ -49,3 +49,4 @@ instantmusic
 apscheduler
 dateparser
 motor
+aiohttp>=2.2.5
