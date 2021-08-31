@@ -1,12 +1,12 @@
 import os
 
-from MashaRoBot.modules.sql_extended.night_mode_sql import add_nightmode, rmnightmode, get_all_chat_id, is_nightmode_indb
+from Elizabeth.modules.sql_extended.night_mode_sql import add_nightmode, rmnightmode, get_all_chat_id, is_nightmode_indb
 from telethon.tl.types import ChatBannedRights
 from apscheduler.schedulers.asyncio import AsyncIOScheduler 
 from telethon import functions
-from MashaRoBot.events import register
-from MashaRoBot import OWNER_ID
-from MashaRoBot import telethn as tbot
+from Elizabeth.events import register
+from Elizabeth import OWNER_ID
+from Elizabeth import telethn as tbot
 from telethon import *
 from telethon import Button, custom, events
 
