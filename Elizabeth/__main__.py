@@ -17,7 +17,6 @@ from Elizabeth import (
     DEV_USERS,
     SUDO_USERS,
     SUPPORT_USERS,
-    SUPPORT_CHAT,
     updater,
     TOKEN,
     MESSAGE_DUMP,
