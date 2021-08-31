@@ -14,14 +14,17 @@
 #    along with this program.  If not, see < https://www.gnu.org/licenses/agpl-3.0.en.html >
 
 
-from Elizabeth.modules.sql_extended.night_mode_sql import add_nightmode, rmnightmode, get_all_chat_id, is_nightmode_indb
+from datetime import timedelta
+
+import dateparser
+from telethon import *
 from telethon.tl.types import ChatBannedRights
-from apscheduler.schedulers.asyncio import AsyncIOScheduler 
-from telethon import functions
-from telethon import types
+
 from Elizabeth.events import register
+from Elizabeth.mongo import db
 from Elizabeth import client as tbot
-import os
+
+nightmod = db.nightmode
 
 
 closechat = ChatBannedRights(
