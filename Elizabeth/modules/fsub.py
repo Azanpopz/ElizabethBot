@@ -3,8 +3,8 @@
 import logging
 import time
 
-from pyrogram import filters
-from pyrogram.errors.exceptions.bad_request_400 import (
+from telegram import filters
+from telegram.errors.exceptions.bad_request_400 import (
     ChatAdminRequired,
     PeerIdInvalid,
     UsernameNotOccupied,
