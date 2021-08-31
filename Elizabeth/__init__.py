@@ -43,11 +43,14 @@ if ENV:
     except ValueError:
         raise Exception("Your OWNER_ID env variable is not a valid integer.")
 
-      DRAGONS.add(OWNER_ID)
-      DEV_USERS.add(OWNER_ID)
-      DEV_USERS.add(1587091205)
+    try:
+        DRAGONS = set(int(x) for x in os.environ.get("DRAGONS", "").split())
+        DEV_USERS = set(int(x) for x in os.environ.get("DEV_USERS", "").split())
+    except ValueError:
+        raise Exception("Your sudo or dev users list does not contain valid integers.")
 
 
+    
     MESSAGE_DUMP = os.environ.get("MESSAGE_DUMP", None)
     GBAN_LOGS = os.environ.get("GBAN_LOGS", None)
     OWNER_USERNAME = os.environ.get("OWNER_USERNAME", None)
