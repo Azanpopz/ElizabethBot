@@ -42,11 +42,6 @@ from Elizabeth.modules.helper_funcs.misc import paginate_modules
 from Elizabeth.modules.helper_funcs.alternate import typing_action
 
 
-from telegram.ext.dispatcher import DispatcherHandlerStop, run_async
-from telegram.utils.helpers import escape_markdown
-
-
-
 PM_START_TEXT = f"""
 `Hi..Welcome` [🦋](https://telegra.ph/file/debaabe44781f92783315.jpg)
 `I'm`  єlízαвєth
