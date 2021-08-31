@@ -12,7 +12,10 @@ from telegram.ext.dispatcher import run_async, DispatcherHandlerStop
 from telegram.utils.helpers import escape_markdown
 
 from Elizabeth import (
+    OWNER_ID
     dispatcher,
+    StartTime,
+    Updater,
     DEV_USERS,
     SUDO_USERS,
     SUPPORT_USERS,
