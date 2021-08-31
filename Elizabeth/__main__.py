@@ -26,6 +26,7 @@ from Elizabeth import (
     LOGGER,
     BLACKLIST_CHATS,
     WHITELIST_CHATS,
+    OWNER_ID
 )
 
 # needed to dynamically load modules
