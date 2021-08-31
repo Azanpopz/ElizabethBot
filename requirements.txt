@@ -48,3 +48,4 @@ bing_image_downloader
 instantmusic
 apscheduler
 dateparser
+motor_asyncio
