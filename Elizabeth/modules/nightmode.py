@@ -1,16 +1,11 @@
-from apscheduler.schedulers.asyncio import AsyncIOScheduler
-from telethon import *
-from telethon import functions
+from Elizabeth.modules.sql_extended.night_mode_sql import add_nightmode, rmnightmode, get_all_chat_id, is_nightmode_indb
 from telethon.tl.types import ChatBannedRights
-
-from Elizabeth import OWNER_ID, tbot
+from apscheduler.schedulers.asyncio import AsyncIOScheduler 
+from telethon import functions
+from telethon import types
 from Elizabeth.events import register
-from Elizabeth.modules.sql.nightmode_sql import (
-    add_nightmode,
-    get_all_chat_id,
-    is_nightmode_indb,
-    rmnightmode,
-)
+from Elizabeth import client as tbot
+import os
 
 hehes = ChatBannedRights(
     until_date=None,
@@ -155,4 +150,4 @@ __help__ = """
 • `/nightmode on/off`*:* Night Mode chats get automatically closed at 12pm and automatically opened at 6am to prevent night spams.
 """
 
-__mod_name__ = "Night Mode"
+__mod_name__ = "N MODE"
