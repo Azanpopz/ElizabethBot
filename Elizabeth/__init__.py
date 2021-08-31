@@ -172,6 +172,7 @@ else:
     PORT = Config.PORT
     CERT_PATH = Config.CERT_PATH
 
+    MONGO_DB_URI = Config.MONGO_DB_URI
     DB_URI = Config.SQLALCHEMY_DATABASE_URI
     DONATION_LINK = Config.DONATION_LINK
     LOAD = Config.LOAD
