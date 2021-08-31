@@ -6,7 +6,7 @@ from apscheduler.schedulers.asyncio import AsyncIOScheduler
 from telethon import functions
 from Elizabeth.events import register
 from Elizabeth import OWNER_ID
-from Elizabeth import telethn as tbot
+from Elizabeth import client as tbot
 from telethon import *
 from telethon import Button, custom, events
 
