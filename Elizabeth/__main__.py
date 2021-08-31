@@ -17,6 +17,7 @@ from Elizabeth import (
     OWNER_ID,
     SUDO_USERS,
     SUPPORT_USERS,
+    SUPPORT_CHAT
     updater,
     TOKEN,
     MESSAGE_DUMP,
