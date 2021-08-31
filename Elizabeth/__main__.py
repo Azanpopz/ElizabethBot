@@ -50,13 +50,13 @@ buttons = [[InlineKeyboardButton(text=" HELP AND COMMANDS ❓",
 ]]
 
 buttons += [[InlineKeyboardButton(text="♻️ ADD ME TO YOUR GROUP ♻️",
-                                  url="t.me/Elizabeth_TgBot?startgroup=true"),
+                                  url="t.me/MOVIESLOKAMGROUP_BOT?startgroup=true"),
 ]]
 
 buttons += [[InlineKeyboardButton(text="SOURCE CODE 💫",
-                                  url="https://t.me/MR_SHRLOCK/49"),
+                                  url="https://t.me/Munnipopz"),
              InlineKeyboardButton(text="SUPPORT🌳",
-                                  url="https://t.me/joinchat/oxSPzt02LkgxOTY9"),
+                                  url="https://t.me/Munnipopz"),
 ]]
 
 buttons += [[InlineKeyboardButton(text="🎀 CLOSE THE MENU 🎀",
