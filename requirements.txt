@@ -50,3 +50,4 @@ apscheduler
 dateparser
 motor
 aiohttp>=2.2.5
+google_trans_new
