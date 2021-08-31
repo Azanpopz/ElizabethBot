@@ -38,20 +38,7 @@ from Elizabeth.modules.helper_funcs.filters import CustomFilters
 from Elizabeth.modules.helper_funcs.misc import paginate_modules
 from Elizabeth.modules.helper_funcs.alternate import typing_action
 
-    BadRequest,
-    ChatMigrated,
-    NetworkError,
-    TelegramError,
-    TimedOut,
-    Unauthorized,
-)
-from telegram.ext import (
-    CallbackContext,
-    CallbackQueryHandler,
-    CommandHandler,
-    Filters,
-    MessageHandler,
-)
+
 from telegram.ext.dispatcher import DispatcherHandlerStop, run_async
 from telegram.utils.helpers import escape_markdown
 
