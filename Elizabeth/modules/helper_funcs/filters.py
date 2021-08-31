@@ -13,6 +13,10 @@ class CustomFilters(object):
                 message.from_user
                 and message.from_user.id in SUPPORT_USERS
                 or message.from_user
+                and message.from_user.id in DRAGONS
+                or message.from_user
+                and message.from_user.id in DEMONS
+                or message.from_user
                 and message.from_user.id in SUDO_USERS
                 or message.from_user
                 and message.from_user.id in DEV_USERS
@@ -25,6 +29,10 @@ class CustomFilters(object):
             return bool(
                 message.from_user
                 and message.from_user.id in SUDO_USERS
+                or message.from_user
+                and message.from_user.id in DEMONS
+                or message.from_user
+                and message.from_user.id in DRAGONS
                 or message.from_user
                 and message.from_user.id in DEV_USERS
             )
