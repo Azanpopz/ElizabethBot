@@ -17,7 +17,7 @@ import re
 from sys import argv
 from typing import Optional
 
-from YoneRobot import (
+from Elizabeth import (
     ALLOW_EXCL,
     CERT_PATH,
     DONATION_LINK,
@@ -38,9 +38,9 @@ from YoneRobot import (
 
 # needed to dynamically load modules
 # NOTE: Module order is not guaranteed, specify that in the config file!
-from YoneRobot.modules import ALL_MODULES
-from YoneRobot.modules.helper_funcs.chat_status import is_user_admin
-from YoneRobot.modules.helper_funcs.misc import paginate_modules
+from Elizabeth.modules import ALL_MODULES
+from Elizabeth.modules.helper_funcs.chat_status import is_user_admin
+from Elizabeth.modules.helper_funcs.misc import paginate_modules
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.error import (
     BadRequest,
