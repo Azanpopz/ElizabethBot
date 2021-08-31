@@ -21,7 +21,7 @@ from telethon import *
 from telethon.tl.types import ChatBannedRights
 
 from Elizabeth.events import register
-from Elizabeth.database import db
+from Elizabeth.db import uri
 from Elizabeth import client as tbot
 
 nightmod = db.nightmode
