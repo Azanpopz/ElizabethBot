@@ -6,7 +6,6 @@ import spamwatch
 from telethon import TelegramClient
 import telegram.ext as tg
 
-
 # enable logging
 logging.basicConfig(
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
@@ -43,20 +42,6 @@ if ENV:
     except ValueError:
         raise Exception("Your OWNER_ID env variable is not a valid integer.")
 
-    try:
-        DRAGONS = set(int(x) for x in os.environ.get("DRAGONS", "").split())
-        DEV_USERS = set(int(x) for x in os.environ.get("DEV_USERS", "").split())
-    except ValueError:
-        raise Exception("Your sudo or dev users list does not contain valid integers.")
-
-    try:
-        DEMONS = set(int(x) for x in os.environ.get("DEMONS", "").split())
-    except ValueError:
-        raise Exception("Your support users list does not contain valid integers.")
-
-
-
-    
     MESSAGE_DUMP = os.environ.get("MESSAGE_DUMP", None)
     GBAN_LOGS = os.environ.get("GBAN_LOGS", None)
     OWNER_USERNAME = os.environ.get("OWNER_USERNAME", None)
@@ -111,7 +96,6 @@ if ENV:
     PORT = int(os.environ.get("PORT", 5000))
     CERT_PATH = os.environ.get("CERT_PATH")
 
-
     DB_URI = os.environ.get("DATABASE_URL")
     DONATION_LINK = os.environ.get("DONATION_LINK")
     LOAD = os.environ.get("LOAD", "").split()
@@ -146,7 +130,6 @@ else:
     except ValueError:
         raise Exception("Your OWNER_ID variable is not a valid integer.")
 
-    
     OWNER_USERNAME = Config.OWNER_USERNAME
     MESSAGE_DUMP = Config.MESSAGE_DUMP
     GBAN_LOGS = Config.GBAN_LOGS
@@ -189,8 +172,7 @@ else:
     PORT = Config.PORT
     CERT_PATH = Config.CERT_PATH
 
-    
-    DB_URI = Config.SQLALCHEMY_DATABASE_URI    
+    DB_URI = Config.SQLALCHEMY_DATABASE_URI
     DONATION_LINK = Config.DONATION_LINK
     LOAD = Config.LOAD
     NO_LOAD = Config.NO_LOAD
@@ -208,7 +190,6 @@ else:
     LASTFM_API_KEY = Config.LASTFM_API_KEY
 
 DEV_USERS.add(OWNER_ID)
-
 
 # Pass if SpamWatch token not set.
 if SPAMWATCH is None:
