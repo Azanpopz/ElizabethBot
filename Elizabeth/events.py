@@ -31,7 +31,7 @@ def register(**args):
     args["pattern"] = pattern.replace("^/", r_pattern, 1)
 
     def decorator(func):
-        telethn.add_event_handler(func, events.NewMessage(**args))
+        client.add_event_handler(func, events.NewMessage(**args))
         return func
 
     return decorator
@@ -65,7 +65,7 @@ def inlinequery(**args):
         args["pattern"] = "(?i)" + pattern
 
     def decorator(func):
-        telethn.add_event_handler(func, events.InlineQuery(**args))
+        client.add_event_handler(func, events.InlineQuery(**args))
         return func
 
     return decorator
@@ -75,7 +75,7 @@ def callbackquery(**args):
     """ Registers inline query. """
 
     def decorator(func):
-        telethn.add_event_handler(func, events.CallbackQuery(**args))
+        client.add_event_handler(func, events.CallbackQuery(**args))
         return func
 
     return decorator
@@ -143,7 +143,7 @@ def bot(**args):
             else:
                 pass
 
-        telethn.add_event_handler(wrapper, events.NewMessage(**args))
+        client.add_event_handler(wrapper, events.NewMessage(**args))
         return wrapper
 
     return decorator
