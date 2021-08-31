@@ -14,6 +14,7 @@ from telegram.utils.helpers import escape_markdown
 from Elizabeth import (
     dispatcher,
     DEV_USERS,
+    OWNER_ID,
     SUDO_USERS,
     SUPPORT_USERS,
     updater,
