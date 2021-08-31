@@ -6,6 +6,8 @@
     <a href="https://github.com/MR-SHRLCK/Elizabethbot/network/members"><img src="https://img.shields.io/github/forks/MR-SHRLCK/Elizabethbot?label=Fork&style=flat-square&logo=github&color=F10070" alt="Fork" /></a>
 </p>
 
+Poda chette
+
 ![logo](https://telegra.ph/file/0157c7b6cd269654ee987.jpg)
 <p align="center">
 
