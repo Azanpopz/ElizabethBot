@@ -1,9 +1,7 @@
 from telegram import Message
 from telegram.ext import BaseFilter
 
-from Elizabeth import SUPPORT_USERS, SUDO_USERS, DEV_USERS, DRAGONS, DEMONS
-
-
+from Elizabeth import SUPPORT_USERS, SUDO_USERS, DEV_USERS
 
 
 class CustomFilters(object):
@@ -12,10 +10,6 @@ class CustomFilters(object):
             return bool(
                 message.from_user
                 and message.from_user.id in SUPPORT_USERS
-                or message.from_user
-                and message.from_user.id in DRAGONS
-                or message.from_user
-                and message.from_user.id in DEMONS
                 or message.from_user
                 and message.from_user.id in SUDO_USERS
                 or message.from_user
@@ -29,10 +23,6 @@ class CustomFilters(object):
             return bool(
                 message.from_user
                 and message.from_user.id in SUDO_USERS
-                or message.from_user
-                and message.from_user.id in DEMONS
-                or message.from_user
-                and message.from_user.id in DRAGONS
                 or message.from_user
                 and message.from_user.id in DEV_USERS
             )
