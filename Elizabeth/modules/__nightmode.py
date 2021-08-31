@@ -20,9 +20,9 @@ import dateparser
 from telethon import *
 from telethon.tl.types import ChatBannedRights
 
-from YoneRobot.events import register
-from YoneRobot.mongo import db
-from YoneRobot import telethn as tbot
+from Elizabeth.events import register
+from Elizabeth.mongo import db
+from Elizabeth import telethn as tbot
 
 nightmod = db.nightmode
 
