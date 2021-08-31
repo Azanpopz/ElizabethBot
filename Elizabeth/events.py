@@ -12,7 +12,7 @@ from telethon import events
 
 from pymongo import MongoClient
 from Elizabeth import MONGO_DB_URI
-from Elizabeth import telethn
+from Elizabeth import client
 
 client = MongoClient()
 client = MongoClient(MONGO_DB_URI)
