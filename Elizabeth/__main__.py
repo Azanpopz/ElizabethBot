@@ -644,7 +644,7 @@ def main():
         updater.start_polling(timeout=15, read_latency=4)
         updater.bot.send_message(
             chat_id=MESSAGE_DUMP,
-            text="Who do you think you are, Forrest Gump?")
+            text="YES I AM ALIVE😉")
         client.run_until_disconnected()
 
     updater.idle()
