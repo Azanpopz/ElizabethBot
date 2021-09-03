@@ -49,4 +49,4 @@ instantmusic
 apscheduler
 dateparser
 motor
-pyrogra
+pyrogram
